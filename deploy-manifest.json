@@ -40,7 +40,7 @@
     {
       "name": "default",
       "runtime": "nodejs18.x",
-      "entrypoint": "api/server/index.js"
+      "entrypoint": "server/index.js"
     }
   ]
 }
