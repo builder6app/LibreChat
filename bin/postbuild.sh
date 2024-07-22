@@ -38,7 +38,7 @@ find node_modules -type d -name ".github" -exec rm -rf {} +
 find node_modules -name "license.md" -type f -delete
 find node_modules -name "tsconfig.json" -type f -delete
 find node_modules -name "CHANGELOG.md" -type f -delete
-find node_modules -name "*..mts.map" -type f -delete
+find node_modules -name "*.mts.map" -type f -delete
 find node_modules -type d -name ".husky" -exec rm -rf {} +
 find node_modules -type d -name "docs" -exec rm -rf {} +
 

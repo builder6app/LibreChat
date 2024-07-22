@@ -106,7 +106,7 @@ find node_modules -name "CHANGELOG.md" -type f -delete
 
 删除.mts.map:
 ```
-find node_modules -name "*..mts.map" -type f -delete
+find node_modules -name "*.mts.map" -type f -delete
 ```
 
 删除.husky:
