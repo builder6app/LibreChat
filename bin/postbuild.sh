@@ -4,8 +4,18 @@ rm -rf ./.amplify-hosting
 
 mkdir -p ./.amplify-hosting/compute
 
+# 检查 node_modules 文件夹是否存在，如果存在则删除
+if [ -d "node_modules" ]; then
+    rm -rf node_modules
+fi
+
 # 进入 api 文件夹并安装依赖
 cd ./api || exit
+
+if [ -d "node_modules" ]; then
+    rm -rf node_modules
+fi
+
 npm ci --omit=dev
 
 # 删除 node_modules 下的特定文件类型
@@ -19,6 +29,8 @@ cd ..
 
 # 拷贝 api 文件夹到目标位置
 cp -r ./api ./.amplify-hosting/compute/default
+cp -r ./.env.example ./.amplify-hosting/compute/default
+
 cp -r ./client ./.amplify-hosting/compute/client
 
 cp -r ./client/public ./.amplify-hosting/static
