@@ -23,6 +23,24 @@ find node_modules -name "*.d.ts" -type f -delete
 find node_modules -name "*.js.map" -type f -delete
 find node_modules -name "*.d.ts.map" -type f -delete
 find node_modules -name "*.ts" -type f -delete
+find node_modules -name "README.md" -type f -delete
+find node_modules -name "readme.md" -type f -delete
+find node_modules -name "LICENSE" -type f -delete
+find node_modules -name "LICENSE.md" -type f -delete
+find node_modules -name "license" -type f -delete
+find node_modules -name "HISTORY.md" -type f -delete
+find node_modules -name "*.mjs.map" -type f -delete
+find node_modules -type d -name "test" -exec rm -rf {} +
+find node_modules -type d -name "example" -exec rm -rf {} +
+find node_modules -name "History.md" -type f -delete
+find node_modules -type d -name "examples" -exec rm -rf {} +
+find node_modules -type d -name ".github" -exec rm -rf {} +
+find node_modules -name "license.md" -type f -delete
+find node_modules -name "tsconfig.json" -type f -delete
+find node_modules -name "CHANGELOG.md" -type f -delete
+find node_modules -name "*..mts.map" -type f -delete
+find node_modules -type d -name ".husky" -exec rm -rf {} +
+find node_modules -type d -name "docs" -exec rm -rf {} +
 
 # 返回上一级目录
 cd ..
