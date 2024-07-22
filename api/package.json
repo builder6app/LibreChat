@@ -13,7 +13,9 @@
     "user-stats": "node ./user-stats.js",
     "create-user": "node ./create-user.js",
     "ban-user": "node ./ban-user.js",
-    "delete-user": "node ./delete-user.js"
+    "delete-user": "node ./delete-user.js",
+    "compressIndex": "node compressIndex.js",
+    "minifyPackageJson": "node minifyPackageJson.js"
   },
   "repository": {
     "type": "git",
@@ -54,8 +56,6 @@
     "express-rate-limit": "^6.9.0",
     "express-session": "^1.17.3",
     "file-type": "^18.7.0",
-    "firebase": "^10.6.0",
-    "googleapis": "^126.0.1",
     "handlebars": "^4.7.7",
     "html": "^1.0.0",
     "ioredis": "^5.3.2",

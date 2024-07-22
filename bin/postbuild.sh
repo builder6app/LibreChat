@@ -1,4 +1,3 @@
-#!/bin/bash
 
 rm -rf ./.amplify-hosting
 
@@ -41,6 +40,28 @@ find node_modules -name "CHANGELOG.md" -type f -delete
 find node_modules -name "*.mts.map" -type f -delete
 find node_modules -type d -name ".husky" -exec rm -rf {} +
 find node_modules -type d -name "docs" -exec rm -rf {} +
+find node_modules -type d -name "tests" -exec rm -rf {} +
+find node_modules -name "*.spec.js" -type f -delete
+find node_modules -name "Readme.md" -type f -delete
+find node_modules -name "*.test.js" -type f -delete
+find node_modules -name "*.png" -type f -delete
+find node_modules -name "*.png" -type f -delete
+find node_modules -name "*.eslintrc" -type f -delete
+find node_modules -name ".nycrc" -type f -delete
+find node_modules -name "*.html" -type f -delete
+find node_modules -name ".editorconfig" -type f -delete
+find node_modules -name "*.min.js" -type f -delete
+find node_modules -name ".npmignore" -type f -delete
+find node_modules -name ".DS_Store" -type f -delete
+find node_modules -name ".eslintignore" -type f -delete
+find node_modules -name "*.cts" -type f -delete
+find node_modules -name "*.mjs" -type f -delete
+find node_modules -name "*.no_extension" -type f -delete
+find node_modules -name "*.md" -type f -delete
+find node_modules -name ".gitattributes" -type f -delete
+find node_modules -name "*.gif" -type f -delete
+find node_modules -name "*.exe" -type f -delete
+find node_modules -name "*.txt" -type f -delete
 
 # 返回上一级目录
 cd ..
