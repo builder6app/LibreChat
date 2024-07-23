@@ -45,7 +45,6 @@ find node_modules -name "*.spec.js" -type f -delete
 find node_modules -name "Readme.md" -type f -delete
 find node_modules -name "*.test.js" -type f -delete
 find node_modules -name "*.png" -type f -delete
-find node_modules -name "*.png" -type f -delete
 find node_modules -name "*.eslintrc" -type f -delete
 find node_modules -name ".nycrc" -type f -delete
 find node_modules -name "*.html" -type f -delete
