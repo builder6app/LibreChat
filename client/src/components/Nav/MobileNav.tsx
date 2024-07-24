@@ -12,7 +12,7 @@ export default function MobileNav({
   const localize = useLocalize();
   const { newConversation } = useNewConvo(0);
   const conversation = useRecoilValue(store.conversationByIndex(0));
-  const { title = 'New Chat' } = conversation || {};
+  const { title = '新的聊天' } = conversation || {};
 
   return (
     <div className="border-token-border-medium bg-token-main-surface-primary sticky top-0 z-10 flex min-h-[40px] items-center justify-center border-b bg-white pl-1 dark:bg-gray-800 dark:text-white md:hidden md:hidden">

@@ -59,7 +59,7 @@ const useGenerateConvo = ({
     } = {}) => {
       let conversation = {
         conversationId: 'new',
-        title: 'New Chat',
+        title: '新的聊天',
         endpoint: null,
         ...template,
         createdAt: '',
