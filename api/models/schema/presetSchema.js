@@ -10,7 +10,7 @@ const presetSchema = mongoose.Schema(
     },
     title: {
       type: String,
-      default: 'New Chat',
+      default: '新的聊天',
       meiliIndex: true,
     },
     user: {

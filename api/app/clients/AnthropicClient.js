@@ -726,7 +726,7 @@ class AnthropicClient extends BaseClient {
    *                            In case of failure, it will return the default title, "New Chat".
    */
   async titleConvo({ text, responseText = '' }) {
-    let title = 'New Chat';
+    let title = '新的聊天';
     const convo = `<initial_message>
   ${truncateText(text)}
   </initial_message>

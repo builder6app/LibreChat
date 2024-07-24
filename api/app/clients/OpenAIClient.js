@@ -762,7 +762,7 @@ class OpenAIClient extends BaseClient {
       delete this.options.attachments;
     }
 
-    let title = 'New Chat';
+    let title = '新的聊天';
     const convo = `||>User:
 "${truncateText(text)}"
 ||>Response:
