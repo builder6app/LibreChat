@@ -1,3 +1,10 @@
+/*
+ * @Author: baozhoutao@steedos.com
+ * @Date: 2024-07-23 15:53:33
+ * @LastEditors: baozhoutao@steedos.com
+ * @LastEditTime: 2024-07-24 16:48:22
+ * @Description:
+ */
 import { memo } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
 import { SettingsTabValues } from 'librechat-data-provider';
@@ -14,9 +21,9 @@ function Chat() {
         <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
           <SendMessageKeyEnter />
         </div>
-        <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
+        {/* <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
           <ChatDirection />
-        </div>
+        </div> */}
         <div className="border-b pb-3 last-of-type:border-b-0 dark:border-gray-600">
           <ShowCodeSwitch />
         </div>

@@ -140,7 +140,7 @@ export default function Settings({ open, onOpenChange }: TDialogProps) {
                       <ExperimentIcon />
                       {localize('com_nav_setting_beta')}
                     </Tabs.Trigger>
-                    <Tabs.Trigger
+                    {/* <Tabs.Trigger
                       className={cn(
                         'group m-1 flex items-center justify-start gap-2 rounded-md px-2 py-1.5 text-sm text-black transition-all duration-200 ease-in-out radix-state-active:bg-white radix-state-active:text-black dark:text-white dark:radix-state-active:bg-gray-600',
                         isSmallScreen
@@ -153,7 +153,7 @@ export default function Settings({ open, onOpenChange }: TDialogProps) {
                     >
                       <SpeechIcon className="icon-sm" />
                       {localize('com_nav_setting_speech')}
-                    </Tabs.Trigger>
+                    </Tabs.Trigger> */}
                     <Tabs.Trigger
                       className={cn(
                         'group m-1 flex items-center justify-start gap-2 rounded-md px-2 py-1.5 text-sm text-black transition-all duration-200 ease-in-out radix-state-active:bg-white radix-state-active:text-black dark:text-white dark:radix-state-active:bg-gray-600',
@@ -187,7 +187,7 @@ export default function Settings({ open, onOpenChange }: TDialogProps) {
                     <General />
                     <Chat />
                     <Beta />
-                    <Speech />
+                    {/* <Speech /> */}
                     <Data />
                     <Account />
                   </div>

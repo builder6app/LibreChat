@@ -432,9 +432,27 @@ export default {
   com_nav_settings: '设置',
   com_nav_search_placeholder: '搜索对话及对话内容',
   com_nav_setting_general: '通用',
+  com_nav_setting_chat: '聊天窗口',
   com_nav_setting_beta: '实验特性',
   com_nav_setting_data: '数据管理',
   com_nav_setting_account: '账户',
+  com_nav_delete_cache_storage: '删除 TTS（文本转语音）缓存存储',
+  com_nav_info_enter_to_send:
+    '启用后，按 `ENTER` 将发送您的消息。禁用时，按 Enter 将添加新行，您需要按 `CTRL + ENTER` 来发送您的消息。',
+  com_nav_info_save_draft:
+    '启用后，您在聊天框中输入的文本和附件将自动保存在本地作为草稿。这些草稿即使在重新加载页面或切换到其他对话时也会可用。草稿存储在您设备的本地，一旦消息发送后将被删除。',
+  com_nav_info_fork_change_default:
+    '`仅可见消息` 仅包含到选定消息的直接路径。`包含相关分支` 会在路径上添加分支。`包含从这里开始的所有消息` 包括所有连接的消息和分支。',
+  com_nav_info_fork_split_target_setting:
+    '启用后，分支将从目标消息开始，延续到对话中的最新消息，具体取决于所选择的行为。',
+  com_nav_info_user_name_display:
+    '启用后，发送者的用户名将显示在您发送的每条消息上方。禁用后，您只会在自己的消息上方看到‘您’。',
+  com_nav_info_latex_parsing:
+    '启用后，消息中的 LaTeX 代码将被渲染为数学公式。如果您不需要 LaTeX 渲染，禁用此功能可能会提高性能。',
+  com_nav_info_revoke:
+    '此操作将撤销并删除您提供的所有 API 密钥。您需要重新输入这些凭据才能继续使用这些端点。',
+  com_nav_info_delete_cache_storage:
+    '此操作将删除存储在您设备上的所有缓存 TTS（文本转语音）音频文件。缓存的音频文件用于加快之前生成的 TTS 音频的播放速度，但它们可能会占用您设备的存储空间。',
   /* The following are AI Translated */
   com_assistants_file_search: '文件搜索',
   com_assistants_file_search_info:
