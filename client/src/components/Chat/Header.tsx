@@ -37,7 +37,7 @@ export default function Header() {
               className="pl-0"
             />
           )}
-          <AddMultiConvo />
+          {/* <AddMultiConvo /> */}
         </div>
         {!isSmallScreen && (
           <ExportAndShareMenu isSharedButtonEnabled={startupConfig?.sharedLinksEnabled ?? false} />
