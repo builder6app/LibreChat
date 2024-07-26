@@ -66,6 +66,10 @@ export function getEndpointField<K extends keyof TConfig>(
   endpoint: EModelEndpoint | string | null | undefined,
   property: K,
 ): TConfig[K] | undefined {
+  if (endpoint == 'gptPlugins') {
+    return undefined;
+  }
+
   if (!endpointsConfig || endpoint === null || endpoint === undefined) {
     return undefined;
   }

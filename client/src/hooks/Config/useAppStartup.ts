@@ -10,7 +10,7 @@ import useConfigOverride from './useConfigOverride';
 import store from '~/store';
 
 const pluginStore: TPlugin = {
-  name: 'Plugin store',
+  name: '插件商店',
   pluginKey: 'pluginStore',
   isButton: true,
   description: '',

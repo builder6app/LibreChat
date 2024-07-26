@@ -2,6 +2,7 @@ const { promises: fs } = require('fs');
 const { CacheKeys } = require('librechat-data-provider');
 const { addOpenAPISpecs } = require('~/app/clients/tools/util/addOpenAPISpecs');
 const { getLogStores } = require('~/cache');
+const _ = require('lodash');
 
 /**
  * Filters out duplicate plugins from the list of plugins.
@@ -74,6 +75,12 @@ const getAvailablePluginsController = async (req, res) => {
       plugins = plugins.filter((plugin) => includedTools.includes(plugin.pluginKey));
     } else {
       plugins = plugins.filter((plugin) => !filteredTools.includes(plugin.pluginKey));
+    }
+
+    if (process.env.TOOLS) {
+      plugins = _.filter(plugins, (tool) => {
+        return _.includes(_.split(process.env.TOOLS, ','), tool.pluginKey);
+      });
     }
 
     await cache.set(CacheKeys.PLUGINS, plugins);

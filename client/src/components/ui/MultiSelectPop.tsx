@@ -75,7 +75,7 @@ function MultiSelectPop({
                   )} */}
                   <span className="flex items-center gap-1 ">
                     <div className="flex gap-1">
-                      {value.length === 0 && 'None selected'}
+                      {value.length === 0 && '未选择任何项目'}
                       {value.map((v, i) => (
                         <div key={i} className="relative">
                           {v.icon ? (

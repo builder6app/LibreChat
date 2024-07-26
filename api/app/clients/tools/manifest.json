@@ -72,7 +72,7 @@
   {
     "name": "Browser",
     "pluginKey": "web-browser",
-    "description": "Scrape and summarize webpage data",
+    "description": "抓取并总结网页数据",
     "icon": "/assets/web-browser.svg",
     "authConfig": [
       {
@@ -98,8 +98,8 @@
   {
     "name": "DALL-E",
     "pluginKey": "dall-e",
-    "description": "Create realistic images and art from a description in natural language",
-    "icon": "https://i.imgur.com/u2TzXzH.png",
+    "description": "根据自然语言描述创建逼真的图像和艺术作品。",
+    "icon": "/assets/dall.png",
     "authConfig": [
       {
         "authField": "DALLE2_API_KEY||DALLE_API_KEY",
@@ -111,8 +111,8 @@
   {
     "name": "DALL-E-3",
     "pluginKey": "dalle",
-    "description": "[DALL-E-3] Create realistic images and art from a description in natural language",
-    "icon": "https://i.imgur.com/u2TzXzH.png",
+    "description": "[DALL-E-3] 根据自然语言描述创建逼真的图像和艺术作品。",
+    "icon": "/assets/dall.png",
     "authConfig": [
       {
         "authField": "DALLE3_API_KEY||DALLE_API_KEY",
@@ -137,8 +137,8 @@
   {
     "name": "Calculator",
     "pluginKey": "calculator",
-    "description": "Perform simple and complex mathematical calculations.",
-    "icon": "https://i.imgur.com/RHsSG5h.png",
+    "description": "进行简单和复杂的数学计算。",
+    "icon": "/assets/calculator.png",
     "isAuthRequired": "false",
     "authConfig": []
   },
@@ -194,8 +194,8 @@
   {
     "name": "CodeBrew",
     "pluginKey": "CodeBrew",
-    "description": "Use 'CodeBrew' to virtually interpret Python, Node, C, C++, Java, C#, PHP, MySQL, Rust or Go code.",
-    "icon": "https://imgur.com/iLE5ceA.png",
+    "description": "使用“CodeBrew”虚拟解释 Python、Node、C、C++、Java、C#、PHP、MySQL、Rust 或 Go 代码。",
+    "icon": "/assets/codeBrew.png",
     "authConfig": []
   }
 ]
