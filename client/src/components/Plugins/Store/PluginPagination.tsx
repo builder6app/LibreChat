@@ -1,4 +1,5 @@
 import React from 'react';
+import useLocalize from '~/hooks/useLocalize';
 
 type TPluginPaginationProps = {
   currentPage: number;
@@ -11,6 +12,7 @@ const PluginPagination: React.FC<TPluginPaginationProps> = ({
   maxPage,
   onChangePage,
 }) => {
+  const localize = useLocalize();
   const pages = [...Array(maxPage).keys()].map((i) => i + 1);
 
   const handlePageChange = (page: number) => {
@@ -47,7 +49,7 @@ const PluginPagination: React.FC<TPluginPaginationProps> = ({
         >
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
-        Prev
+        {localize('com_ui_prev')}
       </div>
       {pages.map((page) => (
         <div
@@ -75,7 +77,7 @@ const PluginPagination: React.FC<TPluginPaginationProps> = ({
         }`}
         style={{ userSelect: 'none' }}
       >
-        Next
+        {localize('com_ui_next')}
         <svg
           stroke="currentColor"
           fill="none"
