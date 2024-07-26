@@ -27,27 +27,16 @@ services:
       - ./images:/app/client/public/images
       - ./logs:/app/api/logs
       - ./librechat.yaml:/app/librechat.yaml
-  vectordb:
-    container_name: vectordb
-    image: ankane/pgvector:latest
-    environment:
-      POSTGRES_DB: mydatabase
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-    restart: always
-    volumes:
-      - pgdata2:/var/lib/postgresql/data
   rag_api:
     container_name: rag_api
     image: ghcr.io/danny-avila/librechat-rag-api-dev-lite:latest
     environment:
-      - DB_HOST=vectordb
+      - DB_HOST=database-1.csjpsygrtokq.us-east-1.rds.amazonaws.com
+      - DB_PORT=5432
+      - POSTGRES_DB=chats6
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=lcZq81UiiNfNjeDwb1nq
       - RAG_PORT=${RAG_PORT:-8000}
     restart: always
-    depends_on:
-      - vectordb
     env_file:
       - .env
-
-volumes:
-  pgdata2:
