@@ -15,9 +15,13 @@ const { processDeleteRequest } = require('~/server/services/Files/process');
 const { deleteAllSharedLinks } = require('~/models/Share');
 const { Transaction } = require('~/models/Transaction');
 const { logger } = require('~/config');
+const { getSubscription } = require('~/server/utils/subscription');
 
 const getUserController = async (req, res) => {
-  res.status(200).send(req.user);
+  const user = req.user;
+  const subscription = await getSubscription(user.extra?.space);
+  user.subscription = subscription;
+  res.status(200).send(user);
 };
 
 const deleteUserFiles = async (req) => {

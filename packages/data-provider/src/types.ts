@@ -106,6 +106,8 @@ export type TUser = {
   plugins: string[];
   createdAt: string;
   updatedAt: string;
+  subscription: Record<string, string>;
+  extra: Record<string, string>;
 };
 
 export type TGetConversationsResponse = {

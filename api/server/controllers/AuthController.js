@@ -9,7 +9,6 @@ const {
 } = require('~/server/services/AuthService');
 const { Session, getUserById } = require('~/models');
 const { logger } = require('~/config');
-const { getSubscription } = require('~/server/utils/subscription');
 
 const registrationController = async (req, res) => {
   try {
@@ -81,8 +80,7 @@ const refreshController = async (req, res) => {
     const session = await Session.findOne({ user: userId, refreshTokenHash: hashedToken });
     if (session && session.expiration > new Date()) {
       const token = await setAuthTokens(userId, res, session._id);
-      const subscription = await getSubscription(user.extra?.space);
-      res.status(200).send({ token, user, subscription });
+      res.status(200).send({ token, user });
     } else if (req?.query?.retry) {
       // Retrying from a refresh token request that failed (401)
       res.status(403).send('No session found');
