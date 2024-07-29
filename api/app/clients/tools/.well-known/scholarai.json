@@ -2,8 +2,8 @@
   "schema_version": "v1",
   "name_for_human": "ScholarAI",
   "name_for_model": "scholarai",
-  "description_for_human": "Unleash scientific research: search 40M+ peer-reviewed papers, explore scientific PDFs, and save to reference managers.",
-  "description_for_model": "Access open access scientific literature from peer-reviewed journals. The abstract endpoint finds relevant papers based on 2 to 6 keywords. After getting abstracts, ALWAYS prompt the user offering to go into more detail. Use the fulltext endpoint to retrieve the entire paper's text and access specific details using the provided pdf_url, if available. ALWAYS hyperlink the pdf_url from the responses if available. Offer to dive into the fulltext or search for additional papers. Always ask if the user wants save any paper to the user’s Zotero reference manager by using the save-citation endpoint and providing the doi and requesting the user’s zotero_user_id and zotero_api_key.",
+  "description_for_human": "释放科学研究：搜索超过4000万篇同行评审的论文，探索科学PDF，并保存到参考管理器。",
+  "description_for_model": "访问开放获取的同行评审期刊的科学文献。摘要端点基于2到6个关键词查找相关论文。在获取摘要后，始终提示用户是否希望深入了解。使用全文端点检索整篇论文的文本，并使用提供的pdf_url访问特定细节（如果可用）。如果可用，始终在响应中超链接pdf_url。提供深入查看全文或搜索其他论文的选项。始终询问用户是否希望将任何论文保存到用户的Zotero参考管理器，使用save-citation端点并提供doi，同时请求用户的zotero_user_id和zotero_api_key。",
   "auth": {
     "type": "none"
   },
@@ -15,7 +15,7 @@
   "params": {
     "sort": "cited_by_count"
   },
-  "logo_url": "https://scholar-ai.net/logo.png",
+  "logo_url": "/assets/scholarai.png",
   "contact_email": "lakshb429@gmail.com",
   "legal_info_url": "https://scholar-ai.net/legal.txt",
   "HttpAuthorizationType": "basic"

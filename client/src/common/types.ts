@@ -314,6 +314,7 @@ export type TDangerButtonProps = {
 
 export type TDialogProps = {
   open: boolean;
+  user?: TUser | undefined;
   onOpenChange: (open: boolean) => void;
 };
 
