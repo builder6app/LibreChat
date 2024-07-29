@@ -11,7 +11,7 @@ services:
       - "3080:3080"
     depends_on:
       - rag_api
-    image: steedos/steedos-librechat:0.7.4-rc1.patch2
+    image: steedos/steedos-librechat:v0.7.4-rc1.patch5
     restart: always
     user: "${UID}:${GID}"
     extra_hosts:
@@ -24,7 +24,7 @@ services:
       - type: bind
         source: ./.env
         target: /app/.env
-      - ./images:/app/client/public/images
+      - /librechat/images:/app/client/public/images
       - ./logs:/app/api/logs
       - ./librechat.yaml:/app/librechat.yaml
   rag_api:
