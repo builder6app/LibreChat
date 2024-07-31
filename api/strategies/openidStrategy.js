@@ -170,6 +170,8 @@ async function setupOpenId() {
               emailVerified: userinfo.email_verified || false,
               name: fullName,
               extra: userinfo.extra || {},
+              phoneNumber: userinfo.phone_number,
+              phoneNumberVerified: userinfo.phone_number_verified,
             };
             user = await createUser(user, true, true);
           } else {
@@ -178,6 +180,8 @@ async function setupOpenId() {
             user.username = username;
             user.name = fullName;
             user.extra = userinfo.extra || {};
+            user.phoneNumber = userinfo.phone_number;
+            user.phoneNumberVerified = userinfo.phone_number_verified;
           }
 
           if (userinfo.picture && !user.avatar?.includes('manual=true')) {

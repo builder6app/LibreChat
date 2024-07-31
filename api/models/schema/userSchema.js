@@ -125,6 +125,16 @@ const userSchema = mongoose.Schema(
     extra: {
       type: Object,
     },
+    phoneNumber: {
+      type: String,
+      lowercase: true,
+      default: '',
+    },
+    phoneNumberVerified: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   { timestamps: true },
 );
