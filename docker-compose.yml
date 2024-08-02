@@ -11,7 +11,7 @@ services:
       - "3080:3080"
     depends_on:
       - rag_api
-    image: steedos/steedos-librechat:v0.7.4-rc1.patch5
+    image: steedos/steedos-librechat:v0.7.4-rc1.patch6
     restart: always
     user: "${UID}:${GID}"
     extra_hosts:
